@@ -28,7 +28,7 @@
             </nav>
 
             <!-- Botão menu mobile -->
-            <button class="md:hidden">
+            <button class="md:hidden" id="btnOpenMenu">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="30" height="30" 
@@ -43,6 +43,28 @@
                 </svg>
             </button>
         </div>
+    </section>
+
+    <!-- Menu mobile -->
+    <section id="sectionMenuMobile" class="bg-teal-400 fixed top-0 left-0 h-full w-[90%] z-50 duration-300 transform -translate-x-full hidden">
+        <button id="btnCloseMenu" class="ml-auto block m-5">
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="30" height="30" 
+                fill="currentColor" 
+                class="bi bi-x text-green-900" 
+                viewBox="0 0 16 16"
+            >
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+        </button>
+
+        <nav class="space-x-4 text-white flex flex-col">
+            <a href="#" class="px-4 py-2 duration-200  hover:drop-shadow-md  font-bold rounded-md">
+                <span>Entrar</span>
+            </a>
+            <a href="#" class="font-bold duration-200 hover:scale-110">Quero ajudar!</a>
+        </nav>
     </section>
 
     <!-- BANNER -->
@@ -67,11 +89,14 @@
     </section>
 
     <!-- BOTÃO WHATSAPP -->
-    <a href="https://wa.me/92991469718/?text=Olá,%20vim%20pelo%20site%20e%20estou%20interessado%20em%20ajudar!" target="_blank" class="fixed bottom-6 right-8 duration-300 hover:-translate-y-4 hover:drop-shadow-xl block">
-        <img src="img/whatsapp.png" alt="" class="w-16" >
+    <a 
+        href="https://wa.me/92991469718/?text=Olá,%20vim%20pelo%20site%20e%20estou%20interessado%20em%20ajudar!" 
+        target="_blank" class="fixed md:bottom-6 bottom-10 right-8 duration-300 hover:-translate-y-4 hover:drop-shadow-xl block"
+    >
+        <img src="img/whatsapp.png" alt="" class="md:w-16 w-12" >
     </a>
 
-    <!---->
+    <!-- Sobre -->
     <section class=" w-full overflow-hidden p-5 " >
         <h2 class="font-bold text-center text-xl py-4">Quer fazer parte dessa corrente do bem e adotar? Entenda como funciona:</h2>
         
@@ -97,9 +122,6 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis illo ut fugit optio pariatur suscipit.</p>
             </div>
         </div>
-        
-    
-
     </section>
 
 
@@ -109,3 +131,4 @@
 </body>
 </html>
 <script src="js/components/slildeHome.js"></script>
+<script src="js/home.js"></script>
